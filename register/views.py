@@ -94,7 +94,7 @@ def signup(request):
                                 send_mail(subject, message, EMAIL_HOST_USER, [recepient], fail_silently=False)
 
                                 to = '+91' + v8
-                                client = Client('ACee71f9f754dee20316564b16bbe51ce6', '491d9fb9cd03700b4db21288d1fe3b62')
+                                client = Client('SID', 'Token')
                                 potp = otp(request)
                                 client.messages.create(
                                     body='Your verification otp is ' + potp,
